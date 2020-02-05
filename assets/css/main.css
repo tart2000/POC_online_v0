@@ -1,0 +1,47 @@
+.bold {
+	font-weight: bold;
+}
+.pb-5 {
+	padding-bottom: 3em;
+}
+.pb-10 {
+	padding-bottom: 5em;
+}
+.text-warning {
+	color: #feb301 !important;
+}
+.fad {
+	--fa-primary-color: #335eea;
+	--fa-secondary-color: rgba(51,94,234,1);
+}
+.text-primary {
+	font-weight: bold;
+}
+#banner-logo {
+	max-width: 200px;
+}
+.border-left {
+	border-left: solid #869ab8 2px !important;
+	padding-left: 20px;
+	font-style: italic;
+}
+#principes .pb-5 { 
+	margin-bottom: 3rem;
+}
+#principes .fa-3x {
+	padding-bottom: 1rem;
+}
+#logos img {
+	filter: grayscale(1);
+	opacity: 0.8;
+}
+#logos img:hover {
+	filter: grayscale(0);
+}
+.project-icon {
+	border: solid white 3px;
+	border-radius: 8px;
+	max-width: 100px;
+	position: relative;
+	bottom: -80px;
+}
