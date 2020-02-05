@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
     <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
     <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
@@ -14,12 +13,27 @@
     <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
 
+    <!-- Les favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/aa103a2df6.js" crossorigin="anonymous"></script>
-
-    <!-- Map -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
@@ -59,10 +73,10 @@
 
             <!-- Buttons -->
             <div class="text-center text-md-left">
-              <a href="#quote" class="btn btn-primary shadow lift mr-1">
+              <a href="#quote" class="btn btn-primary shadow lift mr-1 mb-5">
                 En savoir plus<i class="fas fa-arrow-down d-md-inline ml-3"></i>
               </a>
-              <a href="mailto:arthur@pocstudio.fr" class="btn btn-primary-soft lift">
+              <a href="mailto:arthur@pocstudio.fr" class="btn btn-primary-soft lift mb-5">
                 Contact
               </a>
             </div>
@@ -100,7 +114,7 @@
     </section>
   
 
-    <!-- OFFRES
+    <!-- OFFRE
     ================================================== -->
     <section class="pt-10 pt-lg-9 pb-md-9 pb-lg-9 bg-white">
       <div class="container">
@@ -109,18 +123,23 @@
             
             <!-- Badge -->
             <span class="badge badge-pill badge-primary-soft mb-3">
-              <span class="h6 text-uppercase">Offres</span>
+              <span class="h6 text-uppercase">Offre</span>
             </span>
 
-            <!-- Heading -->
-            <h2>
+            <!-- Heading caché sur mobile -->
+            <h2 class="d-none d-sm-block">
               POC studio vous aide <br>
               à passer de l'idée<span class="text-primary"> <span data-toggle="typed" data-options='{"strings": ["au prototype.", "au produit.", "au pilote.", "au projet."]}'></span></span>
             </h2>
+            <h2 class="d-block d-sm-none">
+              POC studio vous aide <br>
+              à passer de l'idée<span class="text-primary"> prototype.</span>
+            </h2>
+
 
             <!-- Text -->
             <p class="font-size-lg text-gray-700 mb-6">
-              POC studio assemble des équipes ad-hoc d'experts et de facilitateurs pour vous accompagner dans vos projets. 
+              POC studio assemble des équipes ad-hoc de makers et de facilitateurs issus de son réseau d'experts indépendants pour vous accompagner dans vos projets, à la croisée du design, de la technologie et de l'impact. 
             </p>
 
             <!-- List -->
@@ -137,7 +156,7 @@
                   
                   <!-- Text -->
                   <p class="text-primary">
-                    Outils pédagogiques
+                    Conception sur mesure
                   </p>
 
                 </div>
@@ -151,7 +170,7 @@
                   </div>
                   
                   <p class="text-primary">
-                    Plateforme web
+                    Livrables de qualité
                   </p>
 
                 </div>
@@ -164,8 +183,8 @@
                     <i class="fas fa-check"></i>
                   </div>
                   
-                  <p class="text-primary mb-lg-0">
-                    Dispositif interactif
+                  <p class="text-primary">
+                    Outils pédagogiques
                   </p>
 
                 </div>
@@ -184,7 +203,7 @@
                   
                   <!-- Text -->
                   <p class="text-primary">
-                    Pilote d'application
+                    Agilité
                   </p>
 
                 </div>
@@ -199,7 +218,7 @@
                   
                   <!-- Text -->
                   <p class="text-primary">
-                    Info visualisation
+                    Méthodologies hybrides
                   </p>
 
                 </div>
@@ -213,8 +232,8 @@
                   </div>
                   
                   <!-- Text -->
-                  <p class="text-primary mb-0">
-                    Identité graphique
+                  <p class="text-primary">
+                    Culture participative
                   </p>
 
                 </div>
@@ -323,7 +342,7 @@
 
             <!-- Text -->
             <p class="text-muted mb-0">
-              Il faut sortir de la logique des grands projets, faire avec les moyens qu’on a, et commencer petit  
+              Il faut sortir des usines à gaz, faire avec les moyens qu’on a, et commencer petit  
             </p>
 
           </div>
@@ -399,87 +418,71 @@
 
             <!-- Text -->
             <p class="font-size-lg text-muted mb-6">
-              Aujourd'hui, une quantité d'outils permet de tester ses idées rapidement. Nous avons les méthodoliges qui vont avec. Alors pourquoi perdre plus de temps ? Contactez-nous pour discuter de votre projet. 
+              Aujourd'hui, une quantité d'outils permet de tester ses idées rapidement. Nous avons les méthodologies qui vont avec. Alors pourquoi perdre plus de temps ? Contactez-nous pour discuter de votre projet ! 
             </p>
 
             <!-- List -->
             <div class="row">
-              <div class="col-12 col-lg-6">
+              <div class="col-12">
 
                 <!-- Item -->
                 <div class="d-flex">
-
                   <!-- Check -->
                   <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
                     <i class="fas fa-check"></i>
                   </div>
-
                   <!-- Text -->
                   <p class="text-success">
-                    Ateliers créatifs
+                    Accélération de projet d'innovation 
                   </p>
-
                 </div>
 
                 <!-- Item -->
                 <div class="d-flex">
-
                   <!-- Check -->
                   <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
                     <i class="fas fa-check"></i>
                   </div>
-
+                  <!-- Text -->
                   <p class="text-success">
-                    Formation
+                    Outillage et animation de dispositif collaboratif
                   </p>
-
                 </div>
 
                 <!-- Item -->
                 <div class="d-flex">
-
                   <!-- Check -->
                   <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
                     <i class="fas fa-check"></i>
                   </div>
-
-                  <p class="text-success mb-lg-0">
-                    Prospective
-                  </p>
-
-                </div>
-
-              </div>
-              <div class="col-12 col-lg-6 mb-6 mb-md-0">
-
-                <!-- Item -->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <span class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
-                    <i class="fas fa-check"></i>
-                  </span>
-
                   <!-- Text -->
                   <p class="text-success">
-                    Coaching
+                    Développement de parcours pédagogique
                   </p>
-
                 </div>
 
                 <!-- Item -->
                 <div class="d-flex">
-
                   <!-- Check -->
-                  <div class="badge badge-rounded-circle badge-success-soft mr-1 mr-4">
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
                     <i class="fas fa-check"></i>
                   </div>
-
                   <!-- Text -->
-                  <p class="text-success mb-0">
-                    Conception sur mesure
+                  <p class="text-success">
+                    Exploration d'opportunités marché
                   </p>
+                </div>
 
+                 <!-- Item -->
+                <div class="d-flex">
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <!-- Text -->
+                  <p class="text-success">
+                    Matérialisation de livrables de conseil
+                  </p>
                 </div>
 
               </div>
@@ -498,21 +501,21 @@
               <div class="card-body">
 
                 <!-- Form -->
-                <form>
+                <form action="https://formspree.io/xjvwyqzg" method="POST">
                   <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="cardName" placeholder="Nom">
+                    <input type="text" class="form-control form-control-flush" id="cardName" placeholder="Nom" name="name">
                     <label for="cardName">Nom</label>
                   </div>
                   <div class="form-label-group">
-                    <input type="email" class="form-control form-control-flush" id="cardEmail" placeholder="Email">
-                    <label for="cardEmail">Email</label>
+                    <input type="email" class="form-control form-control-flush" id="cardEmail" placeholder="email" name="_replyto">
+                    <label for="cardEmail">email</label>
                   </div>
                   <div class="form-label-group">
-                    <input type="textarea" class="form-control form-control-flush" id="cardEmail" placeholder="Message">
+                    <input type="textarea" class="form-control form-control-flush" id="cardEmail" placeholder="Message" name="message">
                     <label for="cardEmail">Message</label>
                   </div>
                   <div class="mt-6">
-                    <button class="btn btn-block btn-success lift" type="submit">
+                    <button class="btn btn-block btn-success lift" type="submit" value="Send">
                       Contact
                     </button>
                   </div>
@@ -723,8 +726,9 @@
             <img src="./assets/img/logo_poc_studio.svg" alt="..." class="footer-brand img-fluid mb-2">
 
             <!-- Text -->
+            <h3>Atelier de prototypage collaboratif</h3>
             <p class="text-gray-700 mb-2">
-              Atelier de prototypage collaboratif
+              SASU basée en France et fondée par <a href="http://arthurschmitt.com" target="_blank">Arthur Schmitt</a>, ingénieur et designer
             </p>
 
             <!-- Social -->
@@ -754,7 +758,7 @@
             <span class="badge badge-pill badge-primary-soft mb-3">
               <span class="h6 text-uppercase">Blog</span>
             </span>
-            <h2>On écrit aussi</h2>
+            <h2>Les idées claires</h2>
 
             <div class="list-group">
               <!-- List item --> 
