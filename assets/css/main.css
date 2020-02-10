@@ -7,6 +7,9 @@
 .pb-10 {
 	padding-bottom: 5em;
 }
+.bg-light {
+	background-image: url('../img/ep_naturalwhite.png');
+}
 .text-warning {
 	color: #feb301 !important;
 }
@@ -44,4 +47,7 @@
 	max-width: 100px;
 	position: relative;
 	bottom: -80px;
+}
+.principe {
+	max-width: 200px;
 }
