@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- meta tags --> 
+    <title>POC studio</title>
+    <meta name="title" content="POC studio ">
+    <meta name="description" content="Atelier de prototypage collaboratif">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://pocstudio.fr/">
+    <meta property="og:title" content="POC studio ">
+    <meta property="og:description" content="Atelier de prototypage collaboratif">
+    <meta property="og:image" content="http://pocstudio.fr/pocstudio_screen.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://pocstudio.fr/">
+    <meta property="twitter:title" content="POC studio ">
+    <meta property="twitter:description" content="Atelier de prototypage collaboratif">
+    <meta property="twitter:image" content="http://pocstudio.fr/pocstudio_screen.png">
+
+    <!-- Les favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/aa103a2df6.js" crossorigin="anonymous"></script>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <style type="text/css">
+    	
+    	.modal-dialog {
+	      max-width: 800px;
+	      margin: 30px auto;
+  		}
+
+		.modal-body {
+		  position:relative;
+		  padding:0px;
+		}
+		.close {
+		  position:absolute;
+		  right:-30px;
+		  top:0;
+		  z-index:999;
+		  font-size:2rem;
+		  font-weight: normal;
+		  color:#fff;
+		  opacity:1;
+		}
+
+    </style>
+
+
+    <title>POC studio</title>
+  </head>
+  <body>
+
+  	<!-- Navbar -->
+  	<nav class="navbar navbar-light bg-transparent pl-9">
+	  <a class="navbar-brand" href="index.html">
+	    <img src="assets/img/logo_POC_studio_anime.gif" width="150" alt="">
+	  </a>
+	</nav>
+
+	<!-- WELCOME
+    ================================================== -->
+    <section class="position-relative py-8 py-md-11 mb-9">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-blur-1 svg-shim text-gray-200">
+        <svg viewBox="0 0 723 569" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M703.969 241.602L703.963 241.599C716.081 262.97 723 287.677 723 314C723 382.917 675.575 440.757 611.58 456.665L246.7 556.937C226.465 564.729 204.481 569 181.5 569C81.2603 569 0 487.74 0 387.5C0 353.244 9.49023 321.204 25.985 293.867L25.9688 293.875L141.512 77.5476C162.753 33.3052 207.123 2.2726 258.951 0.119583L258.959 0H264.719H390.999H508.5H509.999L510.002 0.00999319C551.85 0.567328 588.083 24.388 606.358 59.1292L606.359 59.125L703.969 241.602Z" fill="currentColor"/>
+        </svg>
+
+      </div>
+      
+      <!-- Contetn -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 order-md-2">
+            
+            <!-- Image -->
+            <div class="mb-8 mb-md-0">
+              <img src="assets/img/bootcamp/celebration_2.gif" alt="Celebration GIF" class="screenshot img-fluid mw-md-130" data-aos-delay="100">
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 order-md-1" data-aos="fade-up">
+            
+            <!-- Heading -->
+            <h1 class="display-3">
+              Un bootcamp de prototypage <br>
+              <span class="text-primary">100% à distance</span>...<br>
+              C'est possible !
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-muted mb-6 mb-md-8">
+              (et c'est même mieux)
+            </p>
+
+            <!-- Buttons -->
+            <a href="#process" class="btn btn-primary mr-1 lift">
+              En savoir plus <i class="fas fa-arrow-down ml-3"></i>
+            </a>
+            <button type="button" class="video-btn btn btn-primary-soft lift" data-toggle="modal" data-src="https://www.youtube.com/embed/C-fXptjxxic" data-target="#myModal">Voir la vidéo</button>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+	<!-- Modal pour la vidéo -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+
+	       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	       </button>        
+	        <!-- 16:9 aspect ratio -->
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+			</div>     
+	      </div>
+
+	    </div>
+	  </div>
+	</div> 
+
+    <!-- PROCESS
+    ================================================== -->
+    <section class="pt-8 pt-md-11" id="process">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-5">
+            
+            <!-- Preheading -->
+            <h6 class="badge badge-pill badge-primary-soft mb-3 text-uppercase">
+              Process
+            </h6>
+
+            <!-- Heading -->
+            <h2>
+              5 jours intenses pour accélérer des projets 
+            </h2>
+
+            <!-- Text -->
+            <p class="lead text-muted mb-6 mb-md-0">
+              Nous avons mélangé le meilleur du présentiel (rythme, support, etc.) et de la distance (outils, autonomie, etc.) pour un résultat inégalé. Ce format permet en plus de développer des compétences utiles pour le monde de demain.
+            </p>
+
+          </div>
+          <div class="col-12 col-md-8 col-xl-6">
+
+            <div class="row no-gutters">
+              <div class="col-4">
+                
+                <!-- Image -->
+                <div class="w-150 mt-9 p-1 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/bootcamp/mural.png" class="img-fluid" alt="...">
+                </div>
+
+              </div>
+              <div class="col-4">
+                
+                <!-- Image -->
+                <div class="w-150 p-1 bg-white shadow-lg" data-aos="fade-up">
+                  <img src="assets/img/bootcamp/wip_wireframes.png" class="img-fluid" alt="...">
+                </div>
+
+              </div>
+              <div class="col-4 position-relative">
+                
+                <!-- Image -->
+                <div class="w-150 mt-11 float-right p-1 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="150">
+                  <img src="assets/img/bootcamp/fin_pitch_party.png" class="img-fluid" alt="...">
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- STEPS
+    ================================================== -->
+    <section class="pt-8 pb-11 pt-md-11">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-auto col-md-12">
+                
+                <!-- Step -->
+                <div class="row no-gutters align-items-center mb-md-5">
+                  <div class="col-auto">
+                    
+                    <a href="#!" class="btn btn-sm btn-rounded-circle btn-dark disabled opacity-1">
+                      <span><i class="fal fa-laptop" style="position: relative; left: -2px;"></i></span>
+                    </a>
+
+                  </div>
+                  <div class="col">
+                    
+                    <hr class="d-none d-md-block w-130">
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="col col-md-12 ml-n5 ml-md-0">
+                
+                <!-- Heading -->
+                <h3>
+                  Matinées en visio 
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-md-0">
+                  Chaque matin, de 9h à midi, tout le monde se retrouve pour une visio intense qui mélange formation, séquences en équipes et feedback. 
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-auto col-md-12">
+                
+                <!-- Step -->
+                <div class="row no-gutters align-items-center mb-md-5">
+                  <div class="col-auto">
+                    
+                    <a href="#!" class="btn btn-sm btn-rounded-circle btn-dark disabled opacity-1">
+                      <span><i class="fal fa-user"></i></span>
+                    </a>
+
+                  </div>
+                  <div class="col">
+                    
+                    <hr class="d-none d-md-block w-130">
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="col col-md-12 ml-n5 ml-md-0">
+                
+                <!-- Heading -->
+                <h3>
+                  Après-midi en autonomie
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-6 mb-md-0">
+                  L'après-midi, chaque équipe a des missions à réaliser en autonomie, afin de pouvoir gérer ses obligations (professionnelles ou familiales). Des mentors sont disponibles au besoin. 
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="row">
+              <div class="col-auto col-md-12">
+                
+                <!-- Step -->
+                <div class="row no-gutters align-items-center mb-md-5">
+                  <div class="col-auto">
+                    
+                    <a href="#!" class="btn btn-sm btn-rounded-circle btn-dark disabled opacity-1">
+                      <span><i class="fal fa-video"></i></span>
+                    </a>
+
+                  </div>
+                </div> <!-- / .row -->
+
+              </div>
+              <div class="col col-md-12 ml-n5 ml-md-0">
+                
+                <!-- Heading -->
+                <h3>
+                  Livestream final
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted mb-0">
+                  Le dernier jour, un livestream ouvert à toute l'organisation permet de montrer les projets et leur avancement. 
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- Missions -->
+    <section class="bg-light pt-8 pb-9 pt-md-11">
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<div class="col-md-8 text-center">
+    				<h2>Missions quotidiennes</h2>
+    				<p class="text-muted mb-6">
+    					Les missions peuvent être adaptées en fonction de la nature et de la maturité des projets accompagnés. 
+    				</p>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col">
+    				<h3>J1 - Kickoff 🚀</h3>
+    				<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/moodboard.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Moodboard</h5>
+					  </div>
+					</div>
+					<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/wireframes.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Wireframes</h5>
+					  </div>
+					</div>
+					<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/storyboard.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Storyboard</h5>
+					  </div>
+					</div>
+    			</div>
+    			<div class="col">
+    				<h3>J2 - Hands-on 🖐</h3>
+    				<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/landing_page.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Landing page</h5>
+					  </div>
+					</div>
+					<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/app_cliquable.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">App cliquable</h5>
+					  </div>
+					</div>
+					<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/photo_mockup.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Photo mockup</h5>
+					  </div>
+					</div>
+    			</div>
+    			<div class="col">
+    				<h3>J3 - Test 🧑</h3>
+    				<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/conducteur.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Conducteur</h5>
+					  </div>
+					</div>
+					<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/test_utilisateur.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Test utilisateur</h5>
+					  </div>
+					</div>
+    			</div>
+    			<div class="col">
+    				<h3>J4 - Pitch 🎤</h3>
+    				<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/pitchdeck.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Pitchdeck</h5>
+					  </div>
+					</div>
+					<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/video_d_experience.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Vidéo d'exp.</h5>
+					  </div>
+					</div>
+					<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/video_pitch.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Vidéo pitch</h5>
+					  </div>
+					</div>
+    			</div>
+    			<div class="col">
+    				<h3>J5 - Launch 🛣</h3>
+    				<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/roadmap.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Roadmap</h5>
+					  </div>
+					</div>
+					<div class="card mb-5">
+					  <img class="card-img-top" src="assets/img/balises/livestream.png" alt="Card image cap">
+					  <div class="card-body" style="padding: 0.8rem;">
+					    <h5 class="card-title mb-0">Livestream</h5>
+					  </div>
+					</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!-- A distance 
+    ================================================== -->
+    <section class="pt-9 pb-9" id="">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary-soft mb-3">
+              <span class="h6 text-uppercase">Pourquoi ?</span>
+            </span>
+
+            <!-- Heading -->
+            <h1>
+              Faire <span class="text-primary">mieux</span> à distance ?
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-gray-700 mb-7 mb-md-9">
+            	Les conditions actuelles nous contraignent à travailler autrement. Mais nous sommes convaincus que le travail à distance a aussi de nombreux avantages...
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5">
+            
+            <!-- Screenshot -->
+            <div class="mb-8 mb-md-0">
+
+              <!-- Image -->
+              <div class="device device-macbook">
+				  <img src="assets/img/bootcamp/partage_moodboards.png" class="device-screen" alt="...">
+				  <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+				</div>
+              
+            </div>
+
+          </div>
+          <div class="col-12 col-md-7">
+            
+            <!-- List -->
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                <span>1</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Granularité 
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-6">
+                  La distance permet bien plus de niveaux d'interventions différents (coachs, spectateurs, intervenants, etc.)
+                </p>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                <span>2</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Autonomisation
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-6">
+                  Les équipes choisissent elles-mêmes les missions les plus adaptées à leur projet et apprennent des choses qu'elles pourront réutiliser ensuite
+                </p>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                <span>3</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Économies 
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-0">
+                  Bien sûr, la distance permet d'économiser les frais habituellement associés à ces événements (nuitées, transport, etc.)
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- Les bons outils. Aussi on a monté un genre de studio télé DIY.  --> 
+    <section class="py-8 py-md-11 bg-gradient-light">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-7">
+    				<!-- Preheading -->
+		            <h6 class="badge badge-pill badge-primary-soft mb-2 text-uppercase">
+		              Outils
+		            </h6>
+
+		            <!-- Heading -->
+		            <h2>
+		              Un expérience de collaboration inédite  
+		            </h2>
+    				<img src="assets/img/bootcamp/obs-2.jpg" class="img-fluid rounded mb-5"> 
+    			</div>
+    			<div class="col-md-5">
+
+		            <!-- Text -->
+		            <p class="lead text-muted mb-6 mb-md-0 mt-md-10">
+		              Nous pensons que, comme en présentiel, l'environnement de travail joue un rôle majeur. En plus d'utiliser les meilleurs outils collaboratifs en ligne (Notion, Figma, Mural, etc.), nous mettons en place un véritable studio de streaming, à la manière d'une régie télé DIY. 
+                	</p>
+                  		
+    			</div>
+    		</div>
+    	</div>
+    </section>
+  
+ 	
+
+    <!-- TESTIMONIALS
+    ================================================== -->
+    <section class="py-8 py-md-11 bg-gradient-light">
+      <div class="container">
+        <div class="row align-items-stretch">
+        	<div class="col-12 text-center mb-5">
+        		<!-- Badge -->
+	            <span class="badge badge-pill badge-primary-soft mb-3">
+	              <span class="h6 text-uppercase">Feedback</span>
+	            </span>
+
+        		<h2>C'est encore les participants qui en parlent le mieux...</h2>
+        		<span>
+        			<i class="fas fa-star"></i>
+        			<i class="fas fa-star"></i>
+        			<i class="fas fa-star"></i>
+        			<i class="fas fa-star"></i>
+        		</span>
+        	</div>
+
+          <div class="col-12 col-md-4">
+            
+            <!-- Blockquote -->
+            <blockquote class="blockquote text-center">
+              
+              <!-- Text -->
+              <p class="mb-5">
+                "C'était très bien et pas facile en technique donc CHAPEAU !”
+              </p>
+
+              <!-- Footer -->
+              <footer class="blockquote-footer mb-8 mb-md-0">
+                <span class="h6 text-uppercase">Participant</span>
+              </footer>
+
+            </blockquote>
+
+          </div>
+          <div class="col-12 col-md-4">
+            
+            <!-- Blockquote -->
+            <blockquote class="blockquote text-center">
+              
+              <!-- Text -->
+              <p class="mb-5">
+                "J’ai aimé les outils divers et riches pour avancer. Les interventions des experts étaient très intéressantes."
+              </p>
+
+              <!-- Footer -->
+              <footer class="blockquote-footer mb-0">
+                  <span class="h6 text-uppercase">Participant</span>
+              </footer>
+
+            </blockquote>
+
+          </div>
+          <div class="col-12 col-md-4">
+            
+            <!-- Blockquote -->
+            <blockquote class="blockquote text-center">
+              
+              <!-- Text -->
+              <p class="mb-5">
+                “J’ai aimé l’organisation, la fluidité et l'aspect émission télévisé 😉”
+              </p>
+
+              <!-- Footer -->
+              <footer class="blockquote-footer mb-0">
+                <span class="h6 text-uppercase">Participant</span>
+              </footer>
+
+            </blockquote>
+
+          </div>
+          <div class="col-12 col-md-4">
+            
+            <!-- Blockquote -->
+            <blockquote class="blockquote text-center">
+              
+              <!-- Text -->
+              <p class="mb-5">
+                “J’ai apprécié les formats variés (quizz, présentation par un collaborateur, etc.)”
+              </p>
+
+              <!-- Footer -->
+              <footer class="blockquote-footer mb-0">
+                <span class="h6 text-uppercase">Participant</span>
+              </footer>
+
+            </blockquote>
+
+          </div>
+          <div class="col-12 col-md-4">
+            
+            <!-- Blockquote -->
+            <blockquote class="blockquote text-center">
+              
+              <!-- Text -->
+              <p class="mb-5">
+                “Vraiment top contenus et formats bravo 👍👍👏👏”
+              </p>
+
+              <!-- Footer -->
+              <footer class="blockquote-footer mb-0">
+                <span class="h6 text-uppercase">Spectateur livestream</span>
+              </footer>
+
+            </blockquote>
+
+          </div>
+          <div class="col-12 col-md-4">
+            
+            <!-- Blockquote -->
+            <blockquote class="blockquote text-center">
+              
+              <!-- Text -->
+              <p class="mb-5">
+                “Bravo pour cette synthèse et ces pistes ! Quel chemin parcouru depuis le départ des travaux !!!”
+              </p>
+
+              <!-- Footer -->
+              <footer class="blockquote-footer mb-0">
+                <span class="h6 text-uppercase">Spectateur livestream</span>
+              </footer>
+
+            </blockquote>
+
+          </div>
+
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CTA
+    ================================================== -->
+    <section class="pt-6 pt-md-8 border-top">
+      <div class="container pb-6 pb-md-8 border-bottom">
+        <div class="row align-items-center">
+          <div class="col-12 col-md">
+            
+            <!-- Heading -->
+            <h3 class="font-weight-bold mb-1">
+              Vous êtes prêts à tenter l'expérience ?
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              Expliquez nous votre projet et nous vous répondrons rapidement avec une proposition !
+            </p>
+
+          </div>
+
+          <div class="col-auto">
+
+          	<a href="index.html#contact" class="btn btn-dark btn-outline">Contactez-nous !</a>
+            
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- BLOG / FOOTER
+    ================================================== -->
+    <section class="py-8 py-md-11 bg-gray-200">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <a href="index.html">
+	            <img src="./assets/img/logo_POC_studio_anime.gif" alt="..." class="footer-brand img-fluid mb-2">
+	        </a>
+
+            <!-- Text -->
+            <h3>Atelier de prototypage collaboratif</h3>
+            <p class="text-gray-700 mb-2">
+              SASU basée en France et fondée par <a href="http://arthurschmitt.com" target="_blank">Arthur Schmitt</a>, ingénieur et designer
+            </p>
+
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="http://instagram.com/tart2000" class="text-decoration-none">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="http://twitter.com/tart2000" class="text-decoration-none">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="http://pinterest.com/tart2000" class="text-decoration-none">
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </li>
+            </ul>
+            
+
+          </div>
+
+          <div class="col-md-8 offset-md-1">
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary-soft mb-3">
+              <span class="h6 text-uppercase">Blog</span>
+            </span>
+            <h2>Les idées claires</h2>
+
+            <div class="list-group">
+              <!-- List item --> 
+              <div class="list-group-item d-flex align-items-center">
+                <!-- Text -->
+                <div class="mr-auto">
+                  <!-- Heading -->
+                  <a href="https://www.youtube.com/watch?v=iiSh7nuk9IU&feature=youtu.be" target="_blank">
+                    <p class="font-weight-bold mb-1">
+                      <i class="fab fa-youtube mr-2"></i>Parlez-vous prototype ?
+                    </p>
+                  </a>
+                  <!-- Text -->
+                  <p class="font-size-sm text-muted mb-0">
+                    Intervention d'Arthur Schmitt, fondateur de POC studio, lors de la première édition du rendez-vous Pastis.design à Marseille
+                  </p>
+
+                </div>
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                  <a href="https://www.youtube.com/watch?v=iiSh7nuk9IU&feature=youtu.be" target="_blank">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div><!-- fin List item --> 
+
+
+              <!-- List item --> 
+              <div class="list-group-item d-flex align-items-center">
+                <!-- Text -->
+                <div class="mr-auto">
+                  <!-- Heading -->
+                  <a href="https://medium.com/@tart2000/une-cat%C3%A9gorisation-des-lieux-dinnovation-93b30774ab71" target="_blank">
+                    <p class="font-weight-bold mb-1">
+                      <i class="fab fa-medium mr-2"></i>Une catégorisation des lieux d'innovation
+                    </p>
+                  </a>
+                  <!-- Text -->
+                  <p class="font-size-sm text-muted mb-0">
+                    Vous voulez ouvrir un lieu d'innovation ? Ou mieux comprendre ce qu'ils peuvent être ? Cette tentative de catégorisation est faite pour vous. 
+                  </p>
+
+                </div>
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                  <a href="https://medium.com/@tart2000/une-cat%C3%A9gorisation-des-lieux-dinnovation-93b30774ab71" target="_blank">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div><!-- fin List item --> 
+
+              <!-- List item --> 
+              <div class="list-group-item d-flex align-items-center">
+                  
+                <!-- Text -->
+                <div class="mr-auto">
+                  
+                  <!-- Heading -->
+                  <a href="https://medium.com/@tart2000/design-thinking-101-en-fran%C3%A7ais-a17656ab813" target="_blank">
+                    <p class="font-weight-bold mb-1">
+                      <i class="fab fa-medium mr-2"></i>Design Thinking 101
+                    </p>
+                  </a>
+
+                  <!-- Text -->
+                  <p class="font-size-sm text-muted mb-0">
+                    Un article pour démystifier le Design Thinking et faciliter son appropriation
+                  </p>
+
+                </div>
+                  
+                <!-- Check -->
+                <div class="badge badge-rounded-circle badge-success-soft ml-4">
+                  <a href="https://medium.com/@tart2000/design-thinking-101-en-fran%C3%A7ais-a17656ab813" target="_blank">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+
+              </div><!-- fin List item --> 
+
+            </div>
+          </div><!-- end row -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+    <script type="text/javascript">
+    	$(document).ready(function() {
+
+			// Gets the video src from the data-src on each button
+
+			var $videoSrc;  
+			$('.video-btn').click(function() {
+			    $videoSrc = $(this).data( "src" );
+			});
+			console.log($videoSrc);
+
+			  
+			// when the modal is opened autoplay it  
+			$('#myModal').on('shown.bs.modal', function (e) {
+			    
+			// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+			$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+			}) 
+
+
+			// stop playing the youtube video when I close the modal
+			$('#myModal').on('hide.bs.modal', function (e) {
+			    // a poor man's stop video
+			    $("#video").attr('src',$videoSrc); 
+			}) 
+			    
+			// document ready  
+		});
+
+
+    </script>
+
+
+  </body>
+</html>
