@@ -1,0 +1,11 @@
+Model Information:
+* title:	Titre AKAI
+* source:	https://sketchfab.com/3d-models/titre-akai-5dc62f3b74324870a37fdd2cb3cbf11d
+* author:	Antoine.Pdr (https://sketchfab.com/Antoine.Pdr)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Titre AKAI" (https://sketchfab.com/3d-models/titre-akai-5dc62f3b74324870a37fdd2cb3cbf11d) by Antoine.Pdr (https://sketchfab.com/Antoine.Pdr) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
