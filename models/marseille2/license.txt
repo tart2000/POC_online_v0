@@ -1,0 +1,11 @@
+Model Information:
+* title:	Marseille
+* source:	https://sketchfab.com/3d-models/marseille-83c6d0e0e761477ba249c3c8d68442cd
+* author:	Antoine.Pdr (https://sketchfab.com/Antoine.Pdr)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Marseille" (https://sketchfab.com/3d-models/marseille-83c6d0e0e761477ba249c3c8d68442cd) by Antoine.Pdr (https://sketchfab.com/Antoine.Pdr) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
