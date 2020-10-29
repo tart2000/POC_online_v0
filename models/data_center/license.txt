@@ -1,0 +1,11 @@
+Model Information:
+* title:	Data Center
+* source:	https://sketchfab.com/3d-models/data-center-05970e84ae514e1ea1296d2fbfa9b24b
+* author:	Antoine.Pdr (https://sketchfab.com/Antoine.Pdr)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Data Center" (https://sketchfab.com/3d-models/data-center-05970e84ae514e1ea1296d2fbfa9b24b) by Antoine.Pdr (https://sketchfab.com/Antoine.Pdr) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
