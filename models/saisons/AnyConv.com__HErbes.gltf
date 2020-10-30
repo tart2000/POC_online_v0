@@ -1,0 +1,165 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.0.5eb040c7)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1328,
+            "type": "VEC3",
+            "max": [
+                391.6247863769531,
+                316.1173095703125,
+                395.89410400390627
+            ],
+            "min": [
+                -388.5264892578125,
+                -44.750099182128909,
+                -387.2403869628906
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1328,
+            "type": "VEC3",
+            "max": [
+                0.9999814033508301,
+                0.47009533643722536,
+                0.9999960660934448
+            ],
+            "min": [
+                -0.999869704246521,
+                -0.4644158184528351,
+                -0.9776175618171692
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1328,
+            "type": "VEC2",
+            "max": [
+                0.8586999773979187,
+                1.0
+            ],
+            "min": [
+                0.15129999816417695,
+                0.004700005054473877
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1992,
+            "type": "SCALAR",
+            "max": [
+                1327
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 50464,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 15936,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 15936,
+            "byteLength": 15936,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 31872,
+            "byteLength": 10624,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 42496,
+            "byteLength": 7968,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "wire_225088199",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Trava_Kolosok",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 1,
+                    "indices": 3,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "input.obj",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "Trava_Kolosok",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}

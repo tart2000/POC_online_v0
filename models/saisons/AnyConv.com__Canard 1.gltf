@@ -1,0 +1,165 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.0.5eb040c7)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9760,
+            "type": "VEC3",
+            "max": [
+                14.037199974060059,
+                30.744199752807618,
+                54.7151985168457
+            ],
+            "min": [
+                -14.037199974060059,
+                -22.525400161743165,
+                -0.04580000042915344
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9760,
+            "type": "VEC3",
+            "max": [
+                0.9999393224716187,
+                0.9992313385009766,
+                0.9999269247055054
+            ],
+            "min": [
+                -0.9999393224716187,
+                -0.9999469518661499,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 9760,
+            "type": "VEC2",
+            "max": [
+                0.989799976348877,
+                0.9921000003814697
+            ],
+            "min": [
+                0.008700000122189522,
+                0.011900007724761963
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 53568,
+            "type": "SCALAR",
+            "max": [
+                9759
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 526592,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 117120,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 117120,
+            "byteLength": 117120,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 234240,
+            "byteLength": 78080,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 312320,
+            "byteLength": 214272,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "12249_Bird_v1",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "12249_Bird_v1",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 1,
+                    "indices": 3,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "input.obj",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "12249_Bird_v1",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}

@@ -1,0 +1,189 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.0.5eb040c7)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 5172,
+            "type": "VEC3",
+            "max": [
+                0.2667810022830963,
+                0.044081900268793109,
+                0.07257650047540665
+            ],
+            "min": [
+                -0.2667810022830963,
+                -0.01606309972703457,
+                -0.13636599481105805
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 5172,
+            "type": "VEC2",
+            "max": [
+                0.5583279728889465,
+                0.9997509717941284
+            ],
+            "min": [
+                0.27047398686408999,
+                0.0012059807777404786
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 31032,
+            "type": "SCALAR",
+            "max": [
+                5171
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 98,
+            "type": "VEC3",
+            "max": [
+                0.00793542992323637,
+                0.011699499562382698,
+                0.044349800795316699
+            ],
+            "min": [
+                -0.00793542992323637,
+                0.007021650206297636,
+                0.039791401475667956
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 480,
+            "type": "SCALAR",
+            "max": [
+                97
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 230664,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 62064,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 62064,
+            "byteLength": 41376,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 103440,
+            "byteLength": 124128,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 227568,
+            "byteLength": 1176,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 228744,
+            "byteLength": 1920,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "gull_body",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 2,
+                    "attributes": {
+                        "POSITION": 0,
+                        "TEXCOORD_0": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "gull_eye",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "input.obj",
+            "children": [
+                1,
+                2
+            ]
+        },
+        {
+            "name": "gull_body",
+            "mesh": 0
+        },
+        {
+            "name": "gull_eye",
+            "mesh": 1
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
